@@ -19,7 +19,7 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v3
               with:
-                node-version: '16'
+                node-version: '20'
             
             - name: Install dependencies
               run: npm install
@@ -48,4 +48,4 @@ jobs:
                        --prod \
                        --yes \
                        --scope ${{ secrets.VERCEL_TEAM_ID }} \
-                       --project ${{ secrets.VERCEL_PROJECT_ID }}
+                       --project-id ${{ secrets.VERCEL_PROJECT_ID }}
