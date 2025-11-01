@@ -47,5 +47,4 @@ jobs:
                 vercel --token ${{ secrets.VERCEL_TOKEN }} \
                        --prod \
                        --yes \
-                       --scope ${{ secrets.VERCEL_TEAM_ID }} \
-                       --project-id ${{ secrets.VERCEL_PROJECT_ID }}
+                       --scope ${{ secrets.VERCEL_TEAM_ID }}
